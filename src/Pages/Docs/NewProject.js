@@ -1,6 +1,6 @@
 import React from "react";
 
-const Apps = () => {
+const NewProject = () => {
  return (
   <div className="page-content">
    <div className="under-construction">
@@ -10,4 +10,4 @@ const Apps = () => {
  );
 };
 
-export default Apps;
+export default NewProject;

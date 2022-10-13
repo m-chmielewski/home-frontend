@@ -1,87 +1,87 @@
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: solid 0.5px rgba(253, 255, 252, 0.3);
-  font-size: 1.3rem;
-  height: 2.4em;
-  user-select: none;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-bottom: solid 0.5px rgba(253, 255, 252, 0.3);
+ font-size: 1.3rem;
+ height: 2.4em;
+ user-select: none;
 }
 
 nav > .menu {
-  display: flex;
-  gap: 1em;
-  align-items: center;
+ display: flex;
+ gap: 1em;
+ align-items: center;
 }
 
 nav li {
-  list-style: none;
+ list-style: none;
 }
 
 nav > .menu a {
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
 }
 
 a:hover,
 .hamburger-icon:hover {
-  opacity: 0.5;
-  transition: 0.3s ease;
+ opacity: 0.5;
+ transition: 0.3s ease;
 }
 
 .hamburger-icon {
-  display: none;
-  cursor: pointer;
+ display: none;
+ cursor: pointer;
 }
 
 .hamburger-menu {
-  position: relative;
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  font-size: 1.3rem;
-  z-index: 1;
-  background-color: #0c0c1e;
+ position: relative;
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ font-size: 1.3rem;
+ z-index: 1;
+ background-color: #0c0c1e;
 }
 
 .hamburger-menu li {
-  width: 100%;
+ width: 100%;
 }
 
 .hamburger-menu a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2.4em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 2.4em;
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  height: 2.4em;
-  border-top: solid 0.5px rgba(253, 255, 252, 0.3);
-  font-size: 1.3rem;
+ display: flex;
+ align-items: center;
+ height: 2.4em;
+ border-top: solid 0.5px rgba(253, 255, 252, 0.3);
+ font-size: 1.3rem;
 }
 
 @media (max-width: 500px) {
-  .footer {
-    left: 2vw;
-    right: 2vw;
-  }
+ .footer {
+  left: 2vw;
+  right: 2vw;
+ }
 }
 
 @media (max-width: 380px) {
-  nav > .menu {
-    display: none;
-  }
+ nav > .menu {
+  display: none;
+ }
 
-  .hamburger-icon {
-    display: block;
-  }
+ .hamburger-icon {
+  display: block;
+ }
 }
 
 @media (min-width: 380px) {
-  .hamburger-menu {
-    display: none !important;
-  }
+ .hamburger-menu {
+  display: none !important;
+ }
 }
