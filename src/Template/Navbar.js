@@ -25,9 +25,9 @@ const Navbar = () => {
      <li>
       <a href="/docs/">Docs</a>
      </li>
-     {/* <li>
+     <li>
       <a href="/apps/">Apps</a>
-     </li> */}
+     </li>
      <li>
       <a
        href="https://github.com/m-chmielewski"
@@ -61,9 +61,9 @@ const Navbar = () => {
     <li>
      <a href="/docs/">Docs</a>
     </li>
-    {/* <li>
+    <li>
      <a href="/apps/">Apps</a>
-    </li> */}
+    </li>
     <li>
      <a
       href="https://github.com/m-chmielewski"

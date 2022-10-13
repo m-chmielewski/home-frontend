@@ -49,7 +49,10 @@ const Release = () => {
    </ul>
    <h2>Todo</h2>
    <ul>
-    <li>Destination environment choice: dev/prod</li>
+    <li style={{ textDecorationLine: "line-through" }}>
+     Destination environment choice: dev/prod
+    </li>
+    <li>Project and environment choice with arrow keys</li>
    </ul>
    {/* <p>The script performs following steps:</p>
       <ol>
