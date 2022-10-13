@@ -1,0 +1,19 @@
+Handle PDF upload upon release
+
+Find new way to present code in Docs
+
+Mediaqueries - margins for page content
+
+Path style navigation
+
+Refactor CSS
+
+In local dev links to pdfs doesnt work
+
+PWA viewport issue upon clicking github link
+
+Contact Form
+
+Fix Apps page footer
+
+Scroll bar style
