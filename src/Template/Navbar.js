@@ -1,32 +1,30 @@
 import React, { useState } from "react";
-import { default as ghLogo } from "../Icons/gh.svg";
+import { NavLink } from "react-router-dom";
 
 import "./Template.css";
+import { default as ghLogo } from "../Icons/gh.svg";
+import { default as hamburger } from "../Icons/hamburger.svg";
+import { default as close } from "../Icons/close.svg";
 
 const Navbar = () => {
  const [hamburgerOpened, setHamburgerOpened] = useState(false);
 
- const [dropdownOpened, setDropdownOpened] = useState(false);
-
  return (
   <>
    <nav>
-    <a href="/">mchm.pl</a>
+    <NavLink to="/">mchm.pl</NavLink>
     <ul className="menu">
-     <li className="cv">
-      <a
-       href="/CV-M-Chmielewski.pdf"
+     <li>
+      <NavLink
+       to="/CV-M-Chmielewski.pdf"
        target="_blank"
        rel="noreferrer"
       >
        CV
-      </a>
+      </NavLink>
      </li>
      <li>
-      <a href="/docs/">Docs</a>
-     </li>
-     <li>
-      <a href="/apps/">Apps</a>
+      <NavLink to="/portfolio/">Portfolio</NavLink>
      </li>
      <li>
       <a
@@ -34,35 +32,38 @@ const Navbar = () => {
        target="_blank"
        rel="noreferrer"
       >
-       <img src={ghLogo}></img>
+       <img
+        src={ghLogo}
+        alt="See GitHub"
+       />
       </a>
      </li>
     </ul>
-    <div
-     className="hamburger-icon"
+    <button
+     className="hamburger-btn"
      onClick={() => setHamburgerOpened(!hamburgerOpened)}
     >
-     &#9776;
-    </div>
+     <img
+      src={hamburgerOpened ? close : hamburger}
+      alt={hamburgerOpened ? "Close menu" : "Open menu"}
+     />
+    </button>
    </nav>
    <ul
     className="hamburger-menu"
     style={hamburgerOpened ? { display: "block" } : { display: "none" }}
    >
     <li className="cv">
-     <a
-      href="/CV-M-Chmielewski.pdf"
+     <NavLink
+      to="/CV-M-Chmielewski.pdf"
       target="_blank"
       rel="noreferrer"
      >
       CV
-     </a>
+     </NavLink>
     </li>
     <li>
-     <a href="/docs/">Docs</a>
-    </li>
-    <li>
-     <a href="/apps/">Apps</a>
+     <NavLink to="/portfolio/">Portfolio</NavLink>
     </li>
     <li>
      <a
@@ -70,7 +71,10 @@ const Navbar = () => {
       target="_blank"
       rel="noreferrer"
      >
-      <img src={ghLogo}></img>
+      <img
+       src={ghLogo}
+       alt="See GitHub"
+      ></img>
      </a>
     </li>
    </ul>

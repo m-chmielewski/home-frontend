@@ -1,19 +1,21 @@
-Handle PDF upload upon release
+Add dev branch
 
 Find new way to present code in Docs
 
-Mediaqueries - margins for page content
-
-Path style navigation
-
-Refactor CSS
-
-In local dev links to pdfs doesnt work
+Breadcrumbs navigation
 
 PWA viewport issue upon clicking github link
 
-Contact Form
+Scroll bar styling
 
-Fix Apps page footer
+Contact form
+ Safari on mobile zooms in to input fields while focused
+ Safari mobile rounds input corners
+ Input validation similar to MERN course
+ Not 200 handler
 
-Scroll bar style
+For release:
+  Shoppin app's page
+  My Values
+  Test on all devices
+  

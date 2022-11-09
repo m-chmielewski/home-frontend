@@ -1,0 +1,46 @@
+.contact-form {
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+
+.contact-form::before {
+ align-self: center;
+ width: 50%;
+ margin-top: 1.5rem;
+ margin-bottom: 2rem;
+ content: "";
+ border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form fieldset {
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ border: none;
+ padding-top: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+ color: inherit;
+ font-family: inherit;
+ font-weight: inherit;
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ background-color: #151535;
+ padding: 0.25rem;
+ resize: none;
+}
+
+.contact-form .actions-wrapper {
+ display: flex;
+ gap: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+ transition-property: all;
+ transition-delay: 60000s;
+}

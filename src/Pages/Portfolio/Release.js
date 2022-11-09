@@ -1,9 +1,13 @@
 import React from "react";
 import { default as gh } from "../../Icons/gh.svg";
 
+import "./PortfolioItemPage.css";
+
+import PageContent from "../../CommonElements/PageContent";
+
 const Release = () => {
  return (
-  <div className="page-content">
+  <PageContent className="portfolio-item-page">
    <h1>
     release.sh
     <a
@@ -12,7 +16,7 @@ const Release = () => {
      rel="noreferrer"
     >
      <img
-      alt=""
+      alt="See on GitHub"
       src={gh}
      ></img>
     </a>
@@ -43,7 +47,7 @@ const Release = () => {
    The script works only with projects:
    <ul>
     <li>
-     created using <a href="/docs/newProject/">newProject 🔗</a>
+     created using <a href="/docs/newProject/">🔗newProject</a>
     </li>
     <li>hosted with small.pl</li>
    </ul>
@@ -87,7 +91,7 @@ const Release = () => {
           directory and puts them into local Express project directory.
         </li>
       </ol> */}
-  </div>
+  </PageContent>
  );
 };
 

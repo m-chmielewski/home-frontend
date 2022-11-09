@@ -1,0 +1,9 @@
+.under-construction {
+ position: absolute;
+ top: 50%;
+ left: 0;
+ right: 0;
+ font-size: 2em;
+ text-align: center;
+ transform: translateY(-50%);
+}

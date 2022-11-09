@@ -1,0 +1,28 @@
+.portfolio-item-page h1 {
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 1em;
+ row-gap: 0;
+}
+
+.portfolio-item-page .tags-wrapper {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5em;
+}
+
+.portfolio-item-page .tags-wrapper div {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #315b2e;
+ color: #eef6ed;
+ height: 1.6em;
+ padding: 0 0.8em;
+ border-radius: 0.8em;
+}
+
+.portfolio-item-page li {
+ margin-left: 2rem;
+ padding: 0.2rem 0;
+}
