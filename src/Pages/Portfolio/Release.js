@@ -47,7 +47,7 @@ const Release = () => {
    The script works only with projects:
    <ul>
     <li>
-     created using <a href="/docs/newProject/">🔗newProject</a>
+     created using <a href="/portfolio/newProject/">🔗newProject</a>
     </li>
     <li>hosted with small.pl</li>
    </ul>
