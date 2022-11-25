@@ -8,6 +8,7 @@ import Navbar from "./Template/Navbar";
 import Footer from "./Template/Footer";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
+import Shoppin from "./Pages/Portfolio/Shoppin/Shoppin";
 import Release from "./Pages/Portfolio/Release";
 import UnderConstruction from "./Pages/UnderConstruction";
 
@@ -27,7 +28,7 @@ const App = () => {
      />
      <Route
       path="/portfolio/shoppin/"
-      element={<UnderConstruction />}
+      element={<Shoppin />}
      />
      <Route
       path="/portfolio/release/"
