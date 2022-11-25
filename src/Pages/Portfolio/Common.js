@@ -9,7 +9,10 @@ import PageContent from "../../CommonElements/PageContent";
 const Common = () => {
  return (
   <PageContent className="portfolio-item-page">
-   <div className="heading-wrapper">
+   <div
+    className="heading-wrapper"
+    style={{ justifyContent: "flex-start", gap: "2rem" }}
+   >
     <h1>Common</h1>
     <a
      href="https://github.com/m-chmielewski/common"
@@ -22,102 +25,56 @@ const Common = () => {
      />
     </a>
    </div>
-   <div className="columns-wrapper">
-    <div>
-     <h2>Source</h2>
-     <div className="source-wrapper">
-      <a
-       href="https://github.com/m-chmielewski/chefin-backend"
-       target="_blank"
-       rel="noreferrer"
-      >
-       <img
-        alt="See on GitHub"
-        src={gh}
-       ></img>
-       <span>Backend</span>
-      </a>
-     </div>
-    </div>
-    <div>
-     <h2>Tags</h2>
-     <div className="tags-wrapper">
-      <div>React</div>
-      <div>Express.js</div>
-      <div>MongoDB</div>
-     </div>
-    </div>
+   <div className="tags-wrapper">
+    <div>React</div>
+    <div>npm</div>
    </div>
    <div>
     <h2>Features</h2>
     <ul>
-     <li>PWA I use to store my recipes</li>
-     <li>View recipes list</li>
-     <li>View chosen recipe</li>
-     <li>
-      Add chosen ingredients to{" "}
-      <a
-       href="https://mchm.pl/portfolio/shoppin/"
-       target="_blank"
-       rel="noreferrer"
-      >
-       🔗shopping list
-      </a>
-     </li>
-     <li>Add a new recipe to the database</li>
+     <li>npm package that I use across my apps</li>
+     <li>React components</li>
+     <li>Custom hooks</li>
+     <li>Utility functions</li>
     </ul>
    </div>
    <div>
     <h2>ToDo</h2>
     <ul>
      <h3 style={{ marginTop: "0rem" }}>General</h3>
-     <li>Authentication and authorization</li>
+     <li>
+      <a
+       href="https://jsdoc.app"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗JSDoc
+      </a>
+     </li>
      <li>Error handling</li>
-     <li>Error boundaries</li>
-     <li>Navigation</li>
-     <li>Logging</li>
-     <li>Servings calculator</li>
-     <li>Schedule</li>
-     <li>Version control</li>
-     <li>Copy recipes to prod db</li>
-     <h3>Recipes</h3>
+     <li>Axios downgraded to 1.0.0 - check in some time if problem is fixed</li>
+     <li>Create a component that will simplify forms implementation</li>
+     <li>Improve exports</li>
+     <li>OnHover works poorly on mobile</li>
+     <li>Scroll bar styling</li>
+     <h3>useFormData</h3>
+     <li>useReducer</li>
+     <h3>useFormState</h3>
+     <li>Validation on blur</li>
+     <h3>useRegularVision</h3>
+     <li>useContext</li>
+     <h3>CategoryWrapper</h3>
+     <li>Expand on enter</li>
+     <h3>PageContent</h3>
+     <li>Chrome mobile - 100vh issue</li>
+     <h3>SuggestiveInput</h3>
      <li>
-      Add{" "}
-      <a
-       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/EllipsisButton.js"
-       target="_blank"
-       rel="noreferrer"
-      >
-       🔗EllipsisButton
-      </a>{" "}
-      with: search, add recipe
+      If I am only tabbing without pressing enter or clicking anywhere lists
+      don’t disappear after reaching lists end
      </li>
-     <li>Introduce categories</li>
-     <h3>Recipe</h3>
-     <li>
-      Add{" "}
-      <a
-       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/EllipsisButton.js"
-       target="_blank"
-       rel="noreferrer"
-      >
-       🔗EllipsisButton
-      </a>{" "}
-      with edit recipe
-     </li>
-     <li>
-      Open AddToShoppingList without retrieving ingredients from backend again
-     </li>
-     <h3>Add recipe</h3>
-     <li>Redesign desktop layout</li>
-     <li>Tags</li>
-     <li>Check if recipe name is already in use</li>
-     <li>Create products that are not yet in db</li>
-     <li>Scrolling to new row logic is sloppy</li>
-     <li>DropdownsHandle logic is sloppy</li>
-     <li>
-      On submit scroll to top of the screen and focus on recipe name field
-     </li>
+     <li>Use backdrop</li>
+     <h3>SubmitSection</h3>
+     <li>Replace form alert with some modal appearing as floating element</li>
     </ul>
    </div>
   </PageContent>

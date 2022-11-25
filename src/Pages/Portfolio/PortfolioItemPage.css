@@ -6,6 +6,12 @@
  gap: 0.5rem;
 }
 
+.portfolio-item-page .heading-wrapper a {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 .portfolio-item-page .columns-wrapper {
  display: flex;
  flex-wrap: wrap;
