@@ -1,16 +1,11 @@
 import React from "react";
 
-import { default as gh } from "../../../Icons/gh.svg";
-import { default as homeScreen } from "./Screenshots/home.png";
-import { default as composeScreen } from "./Screenshots/compose.png";
-import { default as shopScreen } from "./Screenshots/shop.png";
-import { default as addProductScreen } from "./Screenshots/addProduct.png";
+import { default as gh } from "../../Icons/gh.svg";
 
-import "../PortfolioItemPage.css";
+import "./PortfolioItemPage.css";
 
-import Button from "../../../CommonElements/Button";
-
-import PageContent from "../../../CommonElements/PageContent";
+import Button from "../../CommonElements/Button";
+import PageContent from "../../CommonElements/PageContent";
 
 const Shoppin = () => {
  return (

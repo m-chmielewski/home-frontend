@@ -8,7 +8,8 @@ import Navbar from "./Template/Navbar";
 import Footer from "./Template/Footer";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
-import Shoppin from "./Pages/Portfolio/Shoppin/Shoppin";
+import Shoppin from "./Pages/Portfolio/Shoppin";
+import Chefin from "./Pages/Portfolio/Chefin";
 import Release from "./Pages/Portfolio/Release";
 import UnderConstruction from "./Pages/UnderConstruction";
 
@@ -29,6 +30,10 @@ const App = () => {
      <Route
       path="/portfolio/shoppin/"
       element={<Shoppin />}
+     />
+     <Route
+      path="/portfolio/chefin/"
+      element={<Chefin />}
      />
      <Route
       path="/portfolio/release/"

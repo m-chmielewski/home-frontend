@@ -7,7 +7,8 @@ const Portfolio = () => {
  return (
   <PageContent className="portfolio">
    <h1>Portfolio</h1>
-   <h2>Apps</h2>
+   <h2>MERN</h2>
+   <Button href="/portfolio/chefin">Chefin</Button>
    <Button href="/portfolio/shoppin">Shoppin</Button>
    <h2>Scripts</h2>
    <Button href="/portfolio/release/">release.sh</Button>

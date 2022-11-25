@@ -53,7 +53,10 @@ const Navbar = () => {
     className="hamburger-menu"
     style={hamburgerOpened ? { display: "block" } : { display: "none" }}
    >
-    <li className="cv">
+    <li
+     className="cv"
+     onClick={() => setHamburgerOpened(false)}
+    >
      <NavLink
       to="/CV-M-Chmielewski.pdf"
       target="_blank"
@@ -62,10 +65,10 @@ const Navbar = () => {
       CV
      </NavLink>
     </li>
-    <li>
+    <li onClick={() => setHamburgerOpened(false)}>
      <NavLink to="/portfolio/">Portfolio</NavLink>
     </li>
-    <li>
+    <li onClick={() => setHamburgerOpened(false)}>
      <a
       href="https://github.com/m-chmielewski"
       target="_blank"
