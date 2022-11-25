@@ -12,6 +12,8 @@ import Shoppin from "./Pages/Portfolio/Shoppin";
 import Chefin from "./Pages/Portfolio/Chefin";
 import Common from "./Pages/Portfolio/Common";
 import Release from "./Pages/Portfolio/Release";
+import CommonScript from "./Pages/Portfolio/CommonScript";
+import NewProject from "./Pages/Portfolio/NewProject";
 import UnderConstruction from "./Pages/UnderConstruction";
 
 const App = () => {
@@ -41,12 +43,16 @@ const App = () => {
       element={<Common />}
      />
      <Route
+      path="/portfolio/commonScript/"
+      element={<CommonScript />}
+     />
+     <Route
       path="/portfolio/release/"
       element={<Release />}
      />
      <Route
       path="/portfolio/newProject/"
-      element={<UnderConstruction />}
+      element={<NewProject />}
      />
      <Route
       path="*"

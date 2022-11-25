@@ -12,6 +12,7 @@ const Portfolio = () => {
    <Button href="/portfolio/common">Common</Button>
    <Button href="/portfolio/shoppin">Shoppin</Button>
    <h2>Scripts</h2>
+   <Button href="/portfolio/commonScript/">common.sh</Button>
    <Button href="/portfolio/release/">release.sh</Button>
    <Button href="/portfolio/newproject/">newProject.sh</Button>
   </PageContent>

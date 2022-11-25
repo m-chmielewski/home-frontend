@@ -8,8 +8,11 @@ import PageContent from "../../CommonElements/PageContent";
 const Release = () => {
  return (
   <PageContent className="portfolio-item-page">
-   <h1>
-    release.sh
+   <div
+    className="heading-wrapper"
+    style={{ justifyContent: "flex-start", gap: "2rem" }}
+   >
+    <h1>release.sh</h1>
     <a
      href="https://github.com/m-chmielewski/scripts/blob/main/mern/release.sh"
      target="_blank"
@@ -18,11 +21,11 @@ const Release = () => {
      <img
       alt="See on GitHub"
       src={gh}
-     ></img>
+     />
     </a>
-   </h1>
+   </div>
    <div className="tags-wrapper">
-    <div>Bash</div>
+    <div>Shell</div>
     <div>MERN</div>
     <div>DevOps</div>
    </div>
@@ -41,7 +44,7 @@ const Release = () => {
     git clone git@github.com:m-chmielewski/scripts.git
     <br />
     <br />
-    echo "alias release='source ~/scripts/mern/release.sh'" >> ~/.zshrc
+    echo "alias release='source ~/scripts/mern/release.sh'" &gt;&gt; ~/.zshrc
    </code>
    <h2>Dependencies</h2>
    The script works only with projects:
