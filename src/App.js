@@ -10,6 +10,7 @@ import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
 import Shoppin from "./Pages/Portfolio/Shoppin";
 import Chefin from "./Pages/Portfolio/Chefin";
+import Common from "./Pages/Portfolio/Common";
 import Release from "./Pages/Portfolio/Release";
 import UnderConstruction from "./Pages/UnderConstruction";
 
@@ -34,6 +35,10 @@ const App = () => {
      <Route
       path="/portfolio/chefin/"
       element={<Chefin />}
+     />
+     <Route
+      path="/portfolio/common/"
+      element={<Common />}
      />
      <Route
       path="/portfolio/release/"
