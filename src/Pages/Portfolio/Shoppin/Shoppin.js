@@ -1,101 +1,155 @@
 import React from "react";
+
 import { default as gh } from "../../../Icons/gh.svg";
 import { default as homeScreen } from "./Screenshots/home.png";
 import { default as composeScreen } from "./Screenshots/compose.png";
 import { default as shopScreen } from "./Screenshots/shop.png";
 import { default as addProductScreen } from "./Screenshots/addProduct.png";
 
-import "./Shoppin.css";
 import "../PortfolioItemPage.css";
+
+import Button from "../../../CommonElements/Button";
 
 import PageContent from "../../../CommonElements/PageContent";
 
 const Shoppin = () => {
  return (
   <PageContent className="portfolio-item-page">
-   <h1>
-    release.sh
-    <a
-     href="https://github.com/m-chmielewski/scripts/blob/main/mern/release.sh"
-     target="_blank"
-     rel="noreferrer"
+   <div className="heading-wrapper">
+    <h1>Shoppin</h1>
+    <Button
+     href="https://shoppin.mchm.pl"
+     style={{ backgroundColor: "var(--blue)", gap: "1rem" }}
     >
-     <img
-      alt="See on GitHub"
-      src={gh}
-     ></img>
-    </a>
-   </h1>
-   <div className="tags-wrapper">
-    <div>Bash</div>
-    <div>MERN</div>
-    <div>DevOps</div>
+     Open app
+    </Button>
    </div>
-   <h2>Summary</h2>
-   <p>
-    The script streamlines all the steps necessary to release MERN app to remote
-    server.
-    <br />
-    <br /> Both, frontend and backend are available under the same domain. React
-    app is served by Express.
-   </p>
-   <h2>Installation</h2>
-   <code>
-    cd ~<br />
-    <br />
-    git clone git@github.com:m-chmielewski/scripts.git
-    <br />
-    <br />
-    echo "alias release='source ~/scripts/mern/release.sh'" >> ~/.zshrc
-   </code>
-   <h2>Dependencies</h2>
-   The script works only with projects:
-   <ul>
-    <li>
-     created using <a href="/portfolio/newProject/">🔗newProject</a>
-    </li>
-    <li>hosted with small.pl</li>
-   </ul>
-   <h2>Todo</h2>
-   <ul>
-    <li style={{ textDecorationLine: "line-through" }}>
-     Destination environment choice: dev/prod
-    </li>
-    <li>Project and environment choice with arrow keys</li>
-   </ul>
-   {/* <p>The script performs following steps:</p>
-      <ol>
-        <li>
-          Removes old versions of React and Express apps from the remote server.
-        </li>
-        <li>
-          Replaces .env file in local React project directory with remote
-          server's environment relevant one.
-        </li>
-        <li>Creates optimized build of React app.</li>
-        <li>Uploads React app build to the remote server.</li>
-        <li>Removes React app build from local project directory.</li>
-        <li>
-          Replaces .env file in local React project directory with local
-          environment relevant one.
-        </li>
-        <li>
-          Moves node_modules and package-lock.json out of Express project
-          directory and puts them into temporary container directory.
-        </li>
-        <li>
-          Uploads Express app local project directory content to the remote
-          server.
-        </li>
-        <li>
-          Uploads remote server's environment relevant .env file to the remote
-          server.
-        </li>
-        <li>
-          Moves node_modules and package-lock.json out of temporary container
-          directory and puts them into local Express project directory.
-        </li>
-      </ol> */}
+   <div className="columns-wrapper">
+    <div>
+     <h2>Source</h2>
+     <div className="source-wrapper">
+      <a
+       href="https://github.com/m-chmielewski/shoppin-frontend"
+       target="_blank"
+       rel="noreferrer"
+      >
+       <img
+        alt="See on GitHub"
+        src={gh}
+       ></img>
+       <span>Frontend</span>
+      </a>
+      <a
+       href="https://github.com/m-chmielewski/shoppin-backend"
+       target="_blank"
+       rel="noreferrer"
+      >
+       <img
+        alt="See on GitHub"
+        src={gh}
+       ></img>
+       <span>Backend</span>
+      </a>
+     </div>
+    </div>
+    <div>
+     <h2>Tags</h2>
+     <div className="tags-wrapper">
+      <div>React</div>
+      <div>Express.js</div>
+      <div>MongoDB</div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <h2>Features</h2>
+    <ul>
+     <li>PWA I use for household-related shopping</li>
+     <li>Compose a shopping list</li>
+     <li>
+      Once in the store cross out items that have already been placed inside the
+      cart
+     </li>
+     <li>Add a new product to the database</li>
+    </ul>
+   </div>
+   <div>
+    <h2>ToDo</h2>
+    <ul>
+     <h3 style={{ marginTop: "0rem" }}>General</h3>
+     <li>Authentication and authorization</li>
+     <li>Error handling</li>
+     <li>Error boundaries</li>
+     <li>Navigation</li>
+     <li>Logging</li>
+     <li>Scroll bar styling</li>
+     <li>Chrome mobile - 100vh issue</li>
+     <h3>Compose</h3>
+     <li>
+      Get rid of two columns and use{" "}
+      <a
+       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/SelectableCard.js"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗SelectableCard
+      </a>
+     </li>
+     <li>
+      Add{" "}
+      <a
+       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/EllipsisButton.js"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗EllipsisButton
+      </a>{" "}
+      with: search, add product, expand/collapse all
+     </li>
+     <li>regular-vision-gap is hardcoded</li>
+     <h3>Shop</h3>
+     <li>
+      Use{" "}
+      <a
+       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/SelectableCard.js"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗SelectableCard
+      </a>
+     </li>
+     <li>
+      Not all items have been crossed out - do u want to move them to the next
+      list?
+     </li>
+     <li>Move to the end the categories from which all items are in cart</li>
+     <li>
+      Add{" "}
+      <a
+       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/EllipsisButton.js"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗EllipsisButton
+      </a>{" "}
+      with: search, list done, expand/collapse all
+     </li>
+     <h3>Add product</h3>
+     <li>Redesign desktop layout</li>
+     <li>Allow to add more rows instead of adding one by one</li>
+     <li>
+      Make name field{" "}
+      <a
+       href="https://github.com/m-chmielewski/common/blob/main/src/lib/Components/SuggestiveInput.js"
+       target="_blank"
+       rel="noreferrer"
+      >
+       🔗SuggestiveInput
+      </a>{" "}
+      - this will let check if product is already in db
+     </li>
+    </ul>
+   </div>
   </PageContent>
  );
 };

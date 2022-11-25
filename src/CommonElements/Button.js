@@ -14,6 +14,7 @@ const Button = ({ inactive, ...props }) => {
      href={props.href}
      target="_blank"
      rel="noreferrer"
+     style={props.style}
     >
      {props.children}
      <Arrow right />
