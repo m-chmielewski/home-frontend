@@ -37,6 +37,10 @@ const App = () => {
       path="/portfolio/newProject/"
       element={<UnderConstruction />}
      />
+     <Route
+      path="*"
+      element={<UnderConstruction />}
+     />
     </Routes>
     <Footer />
    </Router>
